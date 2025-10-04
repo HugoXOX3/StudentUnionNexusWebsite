@@ -366,6 +366,17 @@
             color: #4ecdc4;
         }
         
+        .social-icon {
+        width: 22px;
+        height: 22px;
+        filter: brightness(0) invert(1);
+        transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover .social-icon {
+            filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(130deg);
+        }
+
         footer {
             background: rgba(15, 30, 60, 0.9);
             padding: 30px 0;
@@ -384,6 +395,18 @@
         body.english .lang-en {
             display: block;
         }
+
+        .questionnaire-link {
+            color: #4ecdc4 !important;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .questionnaire-link:hover {
+            text-decoration: underline;
+        }
+
         
         @media (max-width: 992px) {
             .hero h1 {
@@ -535,8 +558,8 @@
     <section class="hero">
         <div class="container">
             <h1>
-                <span class="lang-zh">歡迎來到我們的學生會 - Nexus</span>
-                <span class="lang-en">Welcome to Our Student Union - Nexus</span>
+                <span class="lang-zh">歡迎來到我們的網站 - Nexus</span>
+                <span class="lang-en">Welcome to Our Website - Nexus</span>
             </h1>
             <p>
                 <span class="lang-zh">代表學生、組織活動，並創建充滿活力的校園社區。</span>
@@ -564,7 +587,7 @@
                     <p class="lang-en">The student council is not only an organizer of events but also a supporter of students' personal and collective growth. Nexus provides opportunities and builds stages, encouraging every student to explore their potential, develop leadership skills, and pursue their dreams.</p>
                 </div>
                 <div class="about-image">
-                    <img src="" alt="Student Union">
+                    <img src="sugrppic.jpg" alt="Student Union">
                 </div>
             </div>
         </div>
@@ -584,43 +607,44 @@
                 
                 <ul class="welfare-points">
                     <li>
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-book"></i>
                         <div class="welfare-text">
                             <h3>
-                                <span class="lang-zh">餐飲福利</span>
-                                <span class="lang-en">Food & Nutrition</span>
+                                <span class="lang-zh">福利</span>
+                                <span class="lang-en">Our Welfare</span>
                             </h3>
                             <p>
-                                <span class="lang-zh">點擊下方連結查看我們的餐飲與營養福利資訊</span>
-                                <span class="lang-en">Click the link below to view our Food & Nutrition welfare information</span>
+                                <span class="lang-zh">點擊下方連結查看我們的餐飲及其他福利資訊</span>
+                                <span class="lang-en">Click the link below to view our Food & Other welfare information</span>
                             </p>
-                            <a href="FoodWelfare.pdf" class="pdf-link" target="_blank">
-                                <span class="lang-zh">查看餐飲福利PDF</span>
-                                <span class="lang-en">View Food & Nutrition Welfare PDF</span>
+                            <a href="Nexus.pdf" class="pdf-link" target="_blank">
+                                <span class="lang-zh">查看PDF</span>
+                                <span class="lang-en">View Food  Welfare PDF</span>
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <div class="welfare-map" id="foodWelfareMap"></div>
                         </div>
                     </li>
-                    <li>
+                    <!--<li>
                         <i class="fas fa-book"></i>
+                        
                         <div class="welfare-text">
                             <h3>
-                                <span class="lang-zh">學術福利</span>
-                                <span class="lang-en">Academic Support</span>
+                                <span class="lang-zh">其他福利</span>
+                                <span class="lang-en">Other</span>
                             </h3>
                             <p>
-                                <span class="lang-zh">點擊下方連結查看我們的學術支持福利資訊</span>
-                                <span class="lang-en">Click the link below to view our Academic Support welfare information</span>
+                                <span class="lang-zh">點擊下方連結查看我們的其他福利資訊</span>
+                                <span class="lang-en">Click the link below to view our Other welfare information</span>
                             </p>
-                            <a href="AcademicWelfare.pdf" class="pdf-link" target="_blank">
-                                <span class="lang-zh">查看學術支持福利PDF</span>
-                                <span class="lang-en">View Academic Support Welfare PDF</span>
+                            <a href="Other.pdf" class="pdf-link" target="_blank">
+                                <span class="lang-zh">查看其他福利PDF</span>
+                                <span class="lang-en">View Other Welfare PDF</span>
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <div class="welfare-map" id="academicWelfareMap"></div>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -640,8 +664,11 @@
                         <span class="lang-en">Student Advocacy</span>
                     </h3>
                     <p>
-                        <span class="lang-zh"></span>
-                        <span class="lang-en"></span>
+                        <span class="lang-zh">我們堅信，每一位同學的意見都值得被聆聽、被重視。Nexus作為同學與學校之間的橋樑，致力於將你的想法轉化為實際行動，共同打造更美好的校園生活。                            
+                            無論是學習環境、課外活動，還是校園政策，我們鼓勵你勇敢表達，提出建議。你的倡議，是推動進步的重要力量！</span>
+                        <span class="lang-en">We firmly believe that every student's voice deserves to be heard and valued. As a bridge between the student and the school administration, Nexus is dedicated to transforming your ideas into tangible actions, working together to create a better campus life.
+
+                            Whether it's about the learning environment, extracurricular activities, or school policies, we encourage you to speak up and share your suggestions. Your initiative is a vital force driving progress!</span>
                     </p>
                 </div>
                 <div class="feature">
@@ -651,8 +678,8 @@
                         <span class="lang-en">Event Organization</span>
                     </h3>
                     <p>
-                        <span class="lang-zh"></span>
-                        <span class="lang-en"></span>
+                        <span class="lang-zh">Nexus致力為本校同學帶來豐富而有趣的校園生活。我們當選後，將會舉辦各種不同的活動，包括體育賽事，學術活動，以及消閒娛樂活動，讓同學在活動中享受充實的校園生活，並在不同領域有所成長</span>
+                        <span class="lang-en">Nexus is committed to bringing a rich and engaging campus life to every student at our school. Upon our election, we will organize a diverse range of activities — including sports competitions, academic events, and recreational activities — allowing students to enjoy a fulfilling campus experience and grow across various fields.</span>
                     </p>
                 </div>
                 <div class="feature">
@@ -662,8 +689,8 @@
                         <span class="lang-en">Student Support</span>
                     </h3>
                     <p>
-                        <span class="lang-zh"></span>
-                        <span class="lang-en"></span>
+                        <span class="lang-zh">填寫<a href="https://www.wjx.cn/vm/Pwxz7jq.aspx" target="_blank" class="questionnaire-link">問卷</a>，詳細說明你的建議或關注事項。我們將收集並整理意見，與學校相關部門溝通協調。共同實現改變：通過會議、活動或政策調整，讓你的聲音成為校園改變的起點！</span>
+                        <span class="lang-en">Share your ideas and concerns through <a href="https://www.wjx.cn/vm/Pwxz7jq.aspx" target="_blank" class="questionnaire-link">our survey</a>. We'll gather all input and work with school administration to turn your feedback into action. Your voice starts the change: Join us in shaping campus life through dialogues, events, and updated policies.</span>
                     </p>
                 </div>
             </div>
@@ -673,20 +700,20 @@
     <section id="events">
         <div class="container">
             <h2 class="section-title">
-                <span class="lang-zh">近期活動</span>
+                <span class="lang-zh">活動</span>
                 <span class="lang-en">Upcoming Events</span>
             </h2>
             <div class="events">
                 <div class="event">
-                    <img src="" alt="Event 1">
+                    <img src="e1.jpg" alt="Event 1">
                     <div class="event-content">
-                        <span class="event-date">
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                        <span class="event-date"> 
+                            <span class="lang-zh">即將到來</span>
+                            <span class="lang-en">Upcoming</span>
                         </span>
                         <h3>
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                            <span class="lang-zh">社際⽻⽑球⽐賽</span>
+                            <span class="lang-en">School-House Badminton Competition</span>
                         </h3>
                         <p>
                             <span class="lang-zh"></span>
@@ -695,15 +722,15 @@
                     </div>
                 </div>
                 <div class="event">
-                    <img src="" alt="Event 2">
+                    <img src="rd.jpg" alt="Event 2">
                     <div class="event-content">
-                        <span class="event-date">
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                        <span class="event-date"> 
+                            <span class="lang-zh">即將到來</span>
+                            <span class="lang-en">Upcoming</span>
                         </span>
                         <h3>
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                            <span class="lang-zh">Random Dance</span>
+                            <span class="lang-en">Random Dance</span>
                         </h3>
                         <p>
                             <span class="lang-zh"></span>
@@ -712,15 +739,15 @@
                     </div>
                 </div>
                 <div class="event">
-                    <img src="" alt="Event 3">
+                    <img src="cf.jpg" alt="Event 3">
                     <div class="event-content">
-                        <span class="event-date">
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                        <span class="event-date"> 
+                            <span class="lang-zh">即將到來</span>
+                            <span class="lang-en">Upcoming</span>
                         </span>
                         <h3>
-                            <span class="lang-zh"></span>
-                            <span class="lang-en"></span>
+                            <span class="lang-zh">文化祭</span>
+                            <span class="lang-en">Cultural Festival</span>
                         </h3>
                         <p>
                             <span class="lang-zh"></span>
@@ -730,6 +757,14 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="more-activities">
+        <div class="container">
+            <p style="text-align: center; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <span class="lang-zh">我們還有更多精彩活動正在籌備中！敬請期待。</span>
+                <span class="lang-en">We have more exciting activities in the works! The wait is almost over!</span>
+            </p>
     </section>
     
     <section id="team">
@@ -741,9 +776,12 @@
             <div class="team">
                 <div class="member">
                     <div class="member-img">
-                        <img src="" alt="Chairperson of SU">
+                        <img src="hugo.png" alt="Chairperson of SU">
                     </div>
-                    <h3>Cheung Man Long</h3>
+                    <h3>
+                        <span class="lang-zh">張⽂朗</span>
+                        <span class="lang-en">Cheung Man Long</span>
+                    </h3>                  
                     <p>
                         <span class="lang-zh">會長</span>
                         <span class="lang-en">Chairperson</span>
@@ -751,9 +789,12 @@
                 </div>
                 <div class="member">
                     <div class="member-img">
-                        <img src="" alt="Vice Chairperson">
+                        <img src="tony.png" alt="Vice Chairperson">
                     </div>
-                    <h3>Fu Wei Ho</h3>
+                    <h3>
+                        <span class="lang-zh">符煒浩</span>
+                        <span class="lang-en">Fu Wei Ho</span>
+                    </h3>
                     <p>
                         <span class="lang-zh">副會長</span>
                         <span class="lang-en">Vice Chairperson</span>
@@ -761,9 +802,12 @@
                 </div>
                 <div class="member">
                     <div class="member-img">
-                        <img src="" alt="Vice Chairperson">
+                        <img src="wong.png" alt="Vice Chairperson">
                     </div>
-                    <h3>Wong Kai Kim</h3>
+                    <h3>
+                        <span class="lang-zh">王嘉乾</span>
+                        <span class="lang-en">Wong Kai Kim</span>
+                    </h3>
                     <p>
                         <span class="lang-zh">副會長</span>
                         <span class="lang-en">Vice Chairperson</span>
@@ -787,7 +831,16 @@
                 <p><i class="fas fa-envelope"></i> nexcuslmst2526@gmail.com</p>
                 
                 <div class="social-links">
-                    <a href="https://www.instagram.com/nexus_lmst?igsh=MTg1cGUzOGJtMmk3cg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/nexus_lmst?igsh=MTg1cGUzOGJtMmk3cg==" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/682054c8000000000d00b135?xsec_token=AB7_5tfA6USKJAFg6cSlvEvo6KFwQRfoYKauRTfAFVO0A=&xsec_token=CBUQtDHaiinHdWhM26kUqyS3SGuVl_cHX5uwkjOTBuaA8=&xsec_source=pc_note&xsec_source=app_share&exSource=https://www.xiaohongshu.com/discovery/item/68d22b04000000000e0251ac?app_platform=ios&app_version=9.1.2&share_from_user_hidden=true&type=video&author_share=1&xhsshare=CopyLink&shareRedId=OD40MDg5R0E2NzUyOTgwNjZHOTdGNjk-&apptime=1758604070&share_id=989ad00968df4b5fbe9026861de43cdb" target="_blank" title="Xiaohongshu">
+                    <img src="xhs.svg" alt="Xiaohongshu" class="social-icon">
+                </a>
+                    <a href="wechat.jpg" target="_blank" title="WeChat">
+                        <i class="fab fa-weixin"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -798,6 +851,11 @@
             <p>
                 <span class="lang-zh">© 2025-2026 學生會後選內閣 Nexus 版權所有</span>
                 <span class="lang-en">© 2025-2026 Potential Student Union Nexus. All Rights Reserved</span>
+                
+            </p>
+            <p>
+                <span class="lang-zh">部分圖片來源網絡，侵權必刪</span>
+                <span class="lang-en">Some images via web. Contact for credit/removal</span>
             </p>
         </div>
     </footer>
@@ -813,17 +871,14 @@
         
         function toggleLanguage() {
             document.body.classList.toggle('english');
-            
-            // Update button text
+
             const zhSpans = document.querySelectorAll('.language-btn .lang-zh');
             const enSpans = document.querySelectorAll('.language-btn .lang-en');
             
             if (document.body.classList.contains('english')) {
-                // Switch to Chinese button text
                 zhSpans.forEach(span => span.style.display = 'inline');
                 enSpans.forEach(span => span.style.display = 'none');
             } else {
-                // Switch to English button text
                 zhSpans.forEach(span => span.style.display = 'none');
                 enSpans.forEach(span => span.style.display = 'inline');
             }
@@ -831,14 +886,12 @@
         
         languageBtn.addEventListener('click', toggleLanguage);
         
-        // Mobile menu functionality
         const menuBtn = document.getElementById('menuBtn');
         const navLinks = document.getElementById('navLinks');
         
         function toggleMenu() {
             navLinks.classList.toggle('active');
             
-            // Change icon based on menu state
             const icon = menuBtn.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -858,14 +911,12 @@
         
         menuBtn.addEventListener('click', toggleMenu);
         
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!menuBtn.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
                 closeMenu();
             }
         });
         
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -883,32 +934,63 @@
             });
         });
 
-        // Initialize maps for welfare locations
         function initMaps() {
             const foodWelfareMap = L.map('foodWelfareMap').setView([22.505, 114.127], 16);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(foodWelfareMap);
             
-            // Add a marker
+            L.marker([22.499335, 114.142710])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>盈翠燒臘茶餐廳</b><br>聯和墟聯盛街18號地下');
+
+            L.marker([22.504414, 114.130137])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>同聚</b><br>上水馬會道176號');
+
+            L.marker([22.498952, 114.143355])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>正宗山東餃子店</b><br>粉嶺聯盛街2-4號');
+
+            L.marker([22.506095, 114.127228])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>華樂餐廳</b><br>上水新豐路29號');
+
+            L.marker([22.504529, 114.129179])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>富穎餐廳</b><br>上水符興街19號');
+
+            L.marker([22.5042114, 114.1295285])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>柒阡</b><br>上水新祥街6號')
+                .openPopup();
+
+            L.marker([22.504126,114.129773])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>華記湖南風味</b><br>上水新祥街1號')
+                .openPopup();
+
+            L.marker([22.507204,114.126938])
+                .addTo(foodWelfareMap)
+                .bindPopup('<b>胡椒仔</b><br>上水新豐路4號順利樓')
+                .openPopup();
+
             L.marker([22.50826,114.12701])
                 .addTo(foodWelfareMap)
-                .bindPopup('<b>餐飲福利</b><br>Food Welfare')
+                .bindPopup('<b>餐飲及其他福利</b><br>Food & Other Welfare')
                 .openPopup();
             
-            const academicWelfareMap = L.map('academicWelfareMap').setView([22.506, 114.127], 16);
+            /* const academicWelfareMap = L.map('academicWelfareMap').setView([22.506, 114.127], 16);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(academicWelfareMap);
-            
-            // Add a marker 
+
             L.marker([22.50826,114.12701])
                 .addTo(academicWelfareMap)
-                .bindPopup('<b>學術福利</b><br>Academic Welfare')
-                .openPopup();
+                .bindPopup('<b>其他福利</b><br>Other Welfare')
+                .openPopup();*/        
         }
 
-        // Initialize maps when the page loads
         window.onload = function() {
             initMaps();
         };
@@ -917,5 +999,3 @@
 </html>
 
 <!-- Code Written By HCMLXOX  -->
-
-
