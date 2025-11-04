@@ -625,26 +625,6 @@
                             <div class="welfare-map" id="foodWelfareMap"></div>
                         </div>
                     </li>
-                    <!--<li>
-                        <i class="fas fa-book"></i>
-                        
-                        <div class="welfare-text">
-                            <h3>
-                                <span class="lang-zh">其他福利</span>
-                                <span class="lang-en">Other</span>
-                            </h3>
-                            <p>
-                                <span class="lang-zh">點擊下方連結查看我們的其他福利資訊</span>
-                                <span class="lang-en">Click the link below to view our Other welfare information</span>
-                            </p>
-                            <a href="Other.pdf" class="pdf-link" target="_blank">
-                                <span class="lang-zh">查看其他福利PDF</span>
-                                <span class="lang-en">View Other Welfare PDF</span>
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <div class="welfare-map" id="academicWelfareMap"></div>
-                        </div>
-                    </li>-->
                 </ul>
             </div>
         </div>
@@ -849,8 +829,8 @@
     <footer>
         <div class="container">
             <p>
-                <span class="lang-zh">© 2025-2026 學生會後選內閣 Nexus 版權所有</span>
-                <span class="lang-en">© 2025-2026 Potential Student Union Nexus. All Rights Reserved</span>
+                <span class="lang-zh">© 2025-2026 鳳溪廖萬石堂中學學生會 Nexus 版權所有</span>
+                <span class="lang-en">© 2025-2026 Student Union of Fung Kai Liu Man Shek Tong,Nexus. All Rights Reserved</span>
                 
             </p>
             <p>
@@ -1047,17 +1027,7 @@
             L.marker([22.50826,114.12701])
                 .addTo(foodWelfareMap)
                 .bindPopup('<b>餐飲及其他福利</b><br>Food & Other Welfare')
-                .openPopup();
-            
-            /* const academicWelfareMap = L.map('academicWelfareMap').setView([22.506, 114.127], 16);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(academicWelfareMap);
-
-            L.marker([22.50826,114.12701])
-                .addTo(academicWelfareMap)
-                .bindPopup('<b>其他福利</b><br>Other Welfare')
-                .openPopup();*/        
+                .openPopup();      
         }
 
         window.onload = function() {
@@ -1066,5 +1036,6 @@
     </script>
 </body>
 </html>
+
 
 <!-- Code Written By HCMLXOX  -->
