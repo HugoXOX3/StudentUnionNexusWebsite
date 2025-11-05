@@ -14,7 +14,7 @@ An alternative online prototype is currently available [here](https://lmstnexus2
 
 The website features a bilingual button allowing users to switch between English and Chinese, providing better accessibility for both Chinese-speaking and English-speaking students.
 
-Additionally, we've included a map listing restaurants near our school, enabling students to easily explore dining options with simple clicks. This approach is much more convenient than traditional methods like checking Instagram or leaflets, which typically require more time.
+Additionally, we've included a map listing restaurants near our school, enabling students to easily explore meal options with simple clicks. This approach is much more convenient than traditional methods like checking Instagram or leaflets, which typically require more time.
 
 The website also displays upcoming events that we will be hosting.
 
